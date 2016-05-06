@@ -10,8 +10,5 @@
         android:id="@+id/action_refresh_random"
         android:title="refresh"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/action_item2"
-        android:title="item2"
-        app:showAsAction="never" />
+
 </menu>

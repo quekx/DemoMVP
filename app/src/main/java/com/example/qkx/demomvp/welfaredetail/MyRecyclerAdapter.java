@@ -59,10 +59,6 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                 .load(r.url)
                 .into(viewHolder.ivPic);
         viewHolder.tvPicId.setText("" + (position + 1));
-//        viewHolder.tvUsername.setText(r.who);
-        if (viewHolder.tvUsername.getVisibility() == View.VISIBLE) {
-            viewHolder.tvUsername.setVisibility(View.INVISIBLE);
-        }
     }
 
     @Override
@@ -78,13 +74,11 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     class MyViewHolder extends RecyclerView.ViewHolder {
         private ImageView ivPic;
         private TextView tvPicId;
-        private TextView tvUsername;
 
         public MyViewHolder(View itemView) {
             super(itemView);
             ivPic = (ImageView) itemView.findViewById(R.id.iv_pic);
             tvPicId = (TextView) itemView.findViewById(R.id.tv_pic_id);
-            tvUsername = (TextView) itemView.findViewById(R.id.tv_username);
         }
     }
 }
