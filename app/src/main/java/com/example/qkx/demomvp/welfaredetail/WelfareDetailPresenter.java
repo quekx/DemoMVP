@@ -21,11 +21,11 @@ public class WelfareDetailPresenter implements WelfareDetailContact.Presenter {
 
     @Override
     public void start() {
-        getHome();
+        displayHome();
     }
 
     @Override
-    public void getRandom() {
+    public void refreshRandom() {
         mWelfareRepository.queryRandom(new WelfareDataSource.GetCallback() {
             @Override
             public void onWelfareGet(Welfare welfare) {
@@ -40,7 +40,7 @@ public class WelfareDetailPresenter implements WelfareDetailContact.Presenter {
     }
 
     @Override
-    public void getHome() {
+    public void displayHome() {
         mWelfareRepository.queryHome(new WelfareDataSource.GetCallback() {
             @Override
             public void onWelfareGet(Welfare welfare) {

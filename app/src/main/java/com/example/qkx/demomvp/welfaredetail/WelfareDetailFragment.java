@@ -72,6 +72,6 @@ public class WelfareDetailFragment extends Fragment implements WelfareDetailCont
     }
 
     public void refreshRandom() {
-        mPresenter.getRandom();
+        mPresenter.refreshRandom();
     }
 }

@@ -56,9 +56,6 @@ public class WelfareDetailActivity extends AppCompatActivity {
                         Toast.makeText(WelfareDetailActivity.this, "refresh random!", Toast.LENGTH_SHORT).show();
                         mFragment.refreshRandom();
                         break;
-                    case R.id.action_item2:
-                        Toast.makeText(WelfareDetailActivity.this, "item2!", Toast.LENGTH_SHORT).show();
-                        break;
                 }
                 return true;
             }

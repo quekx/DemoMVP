@@ -59,7 +59,10 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                 .load(r.url)
                 .into(viewHolder.ivPic);
         viewHolder.tvPicId.setText("" + (position + 1));
-        viewHolder.tvUsername.setText(r.who);
+//        viewHolder.tvUsername.setText(r.who);
+        if (viewHolder.tvUsername.getVisibility() == View.VISIBLE) {
+            viewHolder.tvUsername.setVisibility(View.INVISIBLE);
+        }
     }
 
     @Override

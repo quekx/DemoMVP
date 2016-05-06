@@ -16,8 +16,8 @@ public interface WelfareDetailContact {
 
     interface Presenter extends BasePresenter {
 
-        void getHome();
+        void displayHome();
 
-        void getRandom();
+        void refreshRandom();
     }
 }
